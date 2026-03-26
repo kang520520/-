@@ -9,7 +9,14 @@
 
     <meta property="og:title" content="木藝坊工程實績" />
     <meta property="og:description" content="專營實木扶手、樓梯踏板、室內裝潢，專業施工品質保證。" />
-    <meta property="og:image" content="你網站 Logo 的網址" />
+    {/* 這裡建議放一個真實的圖片網址，不然 LINE 還是會沒圖 */}
+    <meta property="og:image" content="https://myfone.vercel.app/og-image.jpg" />
   </head>
-  ...
+  <body>
+    {/* 1. 必須有這個 id 為 root 的 div */}
+    <div id="root"></div>
+
+    {/* 2. 這是最重要的一行！路徑必須正確 */}
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
